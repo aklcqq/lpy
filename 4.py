@@ -1,3 +1,5 @@
+ma = 1
+mi = 1
 try:
     num = input('Enter a number:')
     num = float(num)
@@ -20,4 +22,3 @@ while (True):
     except:
         print('Invalid input')
 print('ma',ma,'mi',mi)
-
