@@ -1,8 +1,8 @@
 try:
     num = input('Enter a number:')
     num = float(num)
-    max = num
-    min = num
+    ma = num
+    mi = num
 except:
     print('Invalid input')
 while (True):
@@ -10,13 +10,14 @@ while (True):
     if num == 'done': break
     try:
         val = float(num)
-        if val >= max:
-            max = val
-        if val <= min:
-            min = val
+        if val >= ma:
+            ma = val
+        if val <= mi:
+            mi = val
 
 
 
     except:
         print('Invalid input')
-print('max',max,'min',min)
+print('ma',ma,'mi',mi)
+
