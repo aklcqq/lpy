@@ -32,3 +32,5 @@ for b in fhand:
         tar = float(str[int(l.find(':')) + 1:]) + tar
         print(l)
 print('count:',count,'avg:',tar / count)
+
+print('1')
