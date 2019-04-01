@@ -1,24 +1,15 @@
-ma = 1
-mi = 1
-try:
-    num = input('Enter a number:')
-    num = float(num)
-    ma = num
-    mi = num
-except:
-    print('Invalid input')
+ma = None
+mi = None
 while (True):
     num = input('Enter a number:')
     if num == 'done': break
     try:
         val = float(num)
-        if val >= ma:
+        if ma is None or val >= ma:
             ma = val
-        if val <= mi:
+        if mi is None or val <= mi:
             mi = val
-
-
-
     except:
         print('Invalid input')
-print('ma',ma,'mi',mi)
+print('max:',ma,'min:',mi)
+
